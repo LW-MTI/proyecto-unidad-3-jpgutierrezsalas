@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+	<meta charset="utf-8">
+    
+	<title>Regístrate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+  <script type="text/javascript">
+    function validarCorreo(){
+      var dato = document.getElementById('correo').value;
+    
+      if(dato == ""){
+        alert('Debes introducir tu Email');
+      }else{
+        if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(dato)){
+          alert("La dirección de email " + dato + " es correcta!.");
+          window.location.href='login.html';
+        } else {
+          alert("La dirección de email es incorrecta!.");
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/icono.png" width="24" height="24"></a>
+  </div>
+ 
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Encuentra Facil APP</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <!--<li><a href="#"><span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;Encuentra Facil APP</a></li>-->
+        <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarte</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<div id="login">
+		<h1><strong>¿Tienes problemas para acceder?</strong> </h1>
+    <p align=justify>Si deseas restablecer la contraseña, Ingresa la dirección de correo electrónico o el número de teléfono que usas para acceder a tu cuenta.</p>
+		<form action="javascript:void(0);" method="get">
+			<fieldset>
+				<div class="input-group">
+  				<span class="fontawesome-envelope input-group-addon" id="basic-addon1"></span>
+  		    <input id="correo" type="text" class="form-control" placeholder="Introduce tu Correo Electrónico" aria-describedby="basic-addon1" required="required">
+          <span id="correoOK"></span>
+				</div>
+				<br><!-- onclick="window.location.href='login.html'"  -->
+				<p><button class="btn btn-success btn-block" onclick="validarCorreo()">Enviar</button></p>
+			</fieldset>
+		</form>
+	</div> <!-- end login -->
+
+
+    <div class="footer">
+      <div class="container">
+        <h4><p class="footer-block">Derechos Reservados &copy; 2017</p> </h4>
+      </div>
+    </div>
+</body>
+</html>

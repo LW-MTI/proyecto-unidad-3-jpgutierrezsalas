@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+	<meta charset="utf-8">
+    
+	<title>Login with Facebook or Twitter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="assets/signup-form.css" type="text/css" />
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/icono.png" width="24" height="24"></a>
+  </div>
+ 
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Encuentra Facil APP</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        
+        <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarte</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+
+    <div class="signup-form-container">
+      <h1><strong>&nbsp;&nbsp;&nbsp;Registrate con </strong> <a href="#">Facebook</a> o <a href="#">Google</a>.</h1>
+         <!-- form start -->
+         <form method="post" role="form" id="register-form" autocomplete="off" action="usuario.html">
+         
+         <div class="form-header">
+          <h3 class="form-title"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Inicio de Sesión</h3>
+          
+         <div class="pull-right">
+             <h3 class="form-title"><span class="glyphicon glyphicon-pencil"></span></h3>
+         </div>
+                      
+         </div>
+                  
+         <div class="form-body">
+            <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   <input name="name" type="text" class="form-control" placeholder="Nombre de Usuario">
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+                        
+              <div class="row">
+                   <div class="form-group col-lg-12">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="password" id="password" type="password" class="form-control" placeholder="Contraseña">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div> 
+             </div>
+            </div>
+            <p><a href="restablecercontrasena.html">&nbsp;&nbsp;&nbsp;¿Se te olvido el clave?</a></p>
+
+            <div class="form-footer">
+                 <button type="submit" class="btn btn-success">
+                 <span class="glyphicon glyphicon-log-in"></span> Continua !
+                 </button>
+            </div>
+
+
+            </form>
+            
+           </div>
+
+  </div>
+    
+
+    <div class="footer">
+      <div class="container">
+        <h4><p class="footer-block">Derechos Reservados &copy; 2017</p> </h4>
+      </div>
+    </div>
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-1.11.2.min.js"></script>
+    <script src="assets/jquery.validate.min.js"></script>
+    <script src="assets/register.js"></script>
+
+
+
+
+</body>
+</html>
